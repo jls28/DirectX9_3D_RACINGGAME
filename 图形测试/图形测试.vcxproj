@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D7F8F98F-DDA5-418F-8E87-872F15C5644F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>图形测试</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="boxscore.cpp" />
+    <ClCompile Include="building_Left.cpp" />
+    <ClCompile Include="building_Right.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="countdown.cpp" />
+    <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="debugProc.cpp" />
+    <ClCompile Include="effect.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="explosion.cpp" />
+    <ClCompile Include="fade.cpp" />
+    <ClCompile Include="field.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="joystick.cpp" />
+    <ClCompile Include="keyboard.cpp" />
+    <ClCompile Include="light.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="meshField.cpp" />
+    <ClCompile Include="modelarmL.cpp" />
+    <ClCompile Include="modelarmR.cpp" />
+    <ClCompile Include="modelbody.cpp" />
+    <ClCompile Include="modelhandL.cpp" />
+    <ClCompile Include="modelhandR.cpp" />
+    <ClCompile Include="modellegL.cpp" />
+    <ClCompile Include="modellegR.cpp" />
+    <ClCompile Include="money.cpp" />
+    <ClCompile Include="mouse.cpp" />
+    <ClCompile Include="obstacle.cpp" />
+    <ClCompile Include="pause.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="press.cpp" />
+    <ClCompile Include="prop.cpp" />
+    <ClCompile Include="propexplosion.cpp" />
+    <ClCompile Include="propmodel_Group.cpp" />
+    <ClCompile Include="propmp.cpp" />
+    <ClCompile Include="propmplife.cpp" />
+    <ClCompile Include="propmpmax.cpp" />
+    <ClCompile Include="propshow.cpp" />
+    <ClCompile Include="ranking.cpp" />
+    <ClCompile Include="rankingmode.cpp" />
+    <ClCompile Include="result.cpp" />
+    <ClCompile Include="result2.cpp" />
+    <ClCompile Include="resultbg.cpp" />
+    <ClCompile Include="rule.cpp" />
+    <ClCompile Include="rule2.cpp" />
+    <ClCompile Include="runleg.cpp" />
+    <ClCompile Include="score.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="shop.cpp" />
+    <ClCompile Include="skip.cpp" />
+    <ClCompile Include="skipbg.cpp" />
+    <ClCompile Include="skipbg0.cpp" />
+    <ClCompile Include="skipbg2.cpp" />
+    <ClCompile Include="sky.cpp" />
+    <ClCompile Include="sound.cpp" />
+    <ClCompile Include="time.cpp" />
+    <ClCompile Include="timebg.cpp" />
+    <ClCompile Include="title.cpp" />
+    <ClCompile Include="titlebg.cpp" />
+    <ClCompile Include="use.cpp" />
+    <ClCompile Include="meshWall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="boxscore.h" />
+    <ClInclude Include="building_Left.h" />
+    <ClInclude Include="building_Right.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="countdown.h" />
+    <ClInclude Include="cursor.h" />
+    <ClInclude Include="debugProc.h" />
+    <ClInclude Include="effect.h" />
+    <ClInclude Include="enemy.h" />
+    <ClInclude Include="explosion.h" />
+    <ClInclude Include="fade.h" />
+    <ClInclude Include="field.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="joystick.h" />
+    <ClInclude Include="keyboard.h" />
+    <ClInclude Include="light.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="meshField.h" />
+    <ClInclude Include="modelarmL.h" />
+    <ClInclude Include="modelarmR.h" />
+    <ClInclude Include="modelbody.h" />
+    <ClInclude Include="modelhandL.h" />
+    <ClInclude Include="modelhandR.h" />
+    <ClInclude Include="modellegL.h" />
+    <ClInclude Include="modellegR.h" />
+    <ClInclude Include="money.h" />
+    <ClInclude Include="mouse.h" />
+    <ClInclude Include="obstacle.h" />
+    <ClInclude Include="pause.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="press.h" />
+    <ClInclude Include="prop.h" />
+    <ClInclude Include="propexplosion.h" />
+    <ClInclude Include="propmodel_Group.h" />
+    <ClInclude Include="propmp.h" />
+    <ClInclude Include="propmplife.h" />
+    <ClInclude Include="propmpmax.h" />
+    <ClInclude Include="propshow.h" />
+    <ClInclude Include="ranking.h" />
+    <ClInclude Include="rankingmode.h" />
+    <ClInclude Include="result.h" />
+    <ClInclude Include="result2.h" />
+    <ClInclude Include="resultbg.h" />
+    <ClInclude Include="rule.h" />
+    <ClInclude Include="rule2.h" />
+    <ClInclude Include="runleg.h" />
+    <ClInclude Include="score.h" />
+    <ClInclude Include="shadow.h" />
+    <ClInclude Include="shop.h" />
+    <ClInclude Include="skip.h" />
+    <ClInclude Include="skipbg.h" />
+    <ClInclude Include="skipbg2.h" />
+    <ClInclude Include="skipbg0.h" />
+    <ClInclude Include="sky.h" />
+    <ClInclude Include="sound.h" />
+    <ClInclude Include="time.h" />
+    <ClInclude Include="timebg.h" />
+    <ClInclude Include="title.h" />
+    <ClInclude Include="titlebg.h" />
+    <ClInclude Include="use.h" />
+    <ClInclude Include="meshWall.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
