@@ -1,6 +1,0 @@
-﻿  modelbody.cpp
-modelbody.cpp(134): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-modelbody.cpp(135): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-modelbody.cpp(136): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  图形测试.vcxproj -> D:\DX编程\my game\2015_12_10\图形测试.exe
-  图形测试.vcxproj -> D:\DX编程\my game\2015_12_10\图形测试.pdb (Full PDB)
